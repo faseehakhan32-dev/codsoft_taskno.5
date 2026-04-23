@@ -1,0 +1,49 @@
+:root {
+  --primary: #D5B893; /* TAN */
+  --primary-hover: #c9a578; /* Slightly darker TAN */
+  --secondary: #6F4D38; /* COFFEE */
+  --bg-gradient: linear-gradient(135deg, #182336 0%, #25344F 100%); /* Deep space to SPACE CADET */
+  --sidebar-bg: rgba(37, 52, 79, 0.75); /* SPACE CADET with opacity */
+  --card-bg: rgba(97, 120, 145, 0.15); /* SLATE GRAY with opacity */
+  --glass-border: rgba(213, 184, 147, 0.2); /* TAN border with opacity */
+  --text-main: #fcfbf9;
+  --text-muted: #617891; /* SLATE GRAY */
+  --accent: #6F4D38; /* COFFEE */
+  --danger: #632024; /* CAPUT MORTUUM */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
